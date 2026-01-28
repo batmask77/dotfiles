@@ -1,0 +1,30 @@
+set nocompatible	" vi compatible. If .vimrc is exist, automatically set nocompatible. It's just explicit set.
+set nu "line number
+set autoindent
+set cindent "indent for C
+set ts=4		"tab size about \t
+set sts=4		"tab size when tab key pressed
+set shiftwidth=4	"autoindent width
+set laststatus=2	"show always
+set showmatch		"show matching braket
+set ruler			"show current cursor position
+set hlsearch		"highlight searching result
+set incsearch		"incremental searching
+set history=500		"How many lines of history VIM has to remember
+set showmode		"display current mode
+
+"Syntax Highlighting
+syntax on
+filetype plugin indent on
+
+"automatic install vim-plug
+let data_dir = '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+	silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif 
+
+"vim-plug 
+call plug#begin("~/.vim/plugged")
+	source ~/dotfiles/vim/plugins.vim
+call plug#end()

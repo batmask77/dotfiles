@@ -1,0 +1,16 @@
+#vim
+vim/plugged/
+vim/.netrwhist
+vim/swap//
+vim/undo//
+
+#Shell
+.zsh_history
+.bash_history
+
+#OS
+.DS_Store
+
+#Secrets
+*.env
+
