@@ -12,6 +12,7 @@ set hlsearch		"highlight searching result
 set incsearch		"incremental searching
 set history=500		"How many lines of history VIM has to remember
 set showmode		"display current mode
+set clipboard^=unnamed,unnamedplus
 
 "Syntax Highlighting
 syntax on
