@@ -29,3 +29,7 @@ endif
 call plug#begin("~/.vim/plugged")
 	source ~/dotfiles/vim/plugins.vim
 call plug#end()
+
+"airline plugin : show buffers list
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
