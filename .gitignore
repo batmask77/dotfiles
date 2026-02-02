@@ -3,6 +3,7 @@ vim/plugged/
 vim/.netrwhist
 vim/swap//
 vim/undo//
+*.swp
 
 #Shell
 .zsh_history
