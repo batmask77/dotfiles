@@ -1,4 +1,7 @@
 set nocompatible	" vi compatible. If .vimrc is exist, automatically set nocompatible. It's just explicit set.
+"let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+"let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
 set nu "line number
 set autoindent
 set cindent "indent for C
@@ -13,6 +16,7 @@ set incsearch		"incremental searching
 set history=500		"How many lines of history VIM has to remember
 set showmode		"display current mode
 set clipboard^=unnamed,unnamedplus
+set bg=dark
 
 "Syntax Highlighting
 syntax on
