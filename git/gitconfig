@@ -1,0 +1,14 @@
+[safe]
+	directory = /mnt/NVMe M.2/output_files/\n
+	directory = *
+[user]
+	name = batmask
+	email = batmask@naver.com
+[core]
+	autocrlf = input
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[init]
+	defaultBranch = main

@@ -16,3 +16,5 @@ link() {
 }
 
 link "$DOTFILES/vim/vimrc" "$HOME/.vimrc"
+link "$DOTFILES/git/gitconfig" "$HOME/.gitconfig"
+
