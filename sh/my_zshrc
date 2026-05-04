@@ -1,0 +1,20 @@
+# git : make git output by eng
+#alias git='LANG=en_GB git'
+
+#alias for terminal to html
+alias aha="aha -n|t2w.py"
+alias ahaf="aha -n|t2w.py > terminal.html"
+#alias for git
+alias glog="git log --graph --oneline --decorate --color=always"
+
+# my custom command
+export PATH="$PATH:$HOME/mybin"
+# anaconda path
+export PATH="$PATH:$HOME/Applications/anaconda3/bin"
+# brew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

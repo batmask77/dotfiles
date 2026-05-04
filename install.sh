@@ -17,4 +17,9 @@ link() {
 
 link "$DOTFILES/vim/vimrc" "$HOME/.vimrc"
 link "$DOTFILES/git/gitconfig" "$HOME/.gitconfig"
+link "$DOTFILES/sh/my_zshrc" "$HOME/.my_zshrc"
+
+myzshrc='source ~/.my_zshrc'
+grep -qxF "$myzshrc" "$HOME/.zshrc" || echo "$myzshrc" >> "$HOME/.zshrc"
+
 
